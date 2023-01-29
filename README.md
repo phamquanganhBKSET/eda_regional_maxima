@@ -4,8 +4,8 @@ In this submission, we have proposed an innovative algorithm based on the origin
 Here, we have both software code to describe the new algorithm and hardware code that has been designed and tested.
 
 # Team members
-Pham Quang Anh
-Nguyen Viet Thi
+Pham Quang Anh </br>
+Nguyen Viet Thi </br>
 Nguyen Duc Quang
 
 # Directory layout
