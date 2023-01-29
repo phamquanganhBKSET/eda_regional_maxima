@@ -8,7 +8,7 @@ Date   : Sun Jan 29 14:39:37 2023
 
 Library(s) Used:
 
-    dti_stdcell_ssg_0p81v_neg40c (File: /data2/projects/libraries/tsmc28hpcp/7t/dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db/dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db)
+    dti_stdcell_ssg_0p81v_neg40c (File: dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db)
 
 Number of ports:                           55
 Number of nets:                          5626
