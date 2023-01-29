@@ -3,6 +3,11 @@ This is our submission for **26th LSI Contest**. The goal is to design the hardw
 In this submission, we have proposed an innovative algorithm based on the original algorithm to improve some restrictions of the original one mentioned in our document. And, the hardware design is based on new proposed algorithm. </br> </br>
 Here, we have both software code to describe the new algorithm and hardware code that has been designed and tested.
 
+# Team members
+Pham Quang Anh </br>
+Nguyen Viet Thi </br>
+Nguyen Duc Quang
+
 # Directory layout
 ```bash
 .
