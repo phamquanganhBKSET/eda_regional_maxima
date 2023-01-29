@@ -27,7 +27,7 @@ Nguyen Duc Quang
 ```
 # How to run software simulation by python3 (new proposed algorithm)
 1. Go to directory **software** at the terminal
-2. Run the following commands at the terminal
+2. Run the following command at the terminal
 ```sh
 $ python3 test.py
 ```
