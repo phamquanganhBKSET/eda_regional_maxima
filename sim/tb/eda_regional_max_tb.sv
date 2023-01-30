@@ -63,7 +63,6 @@ module eda_regional_max_tb ();
     clk = 0;
     reset_n = 0;
     write_en = 0;
-    start_check = 0;
     start = 0;
 
     @(negedge clk);
