@@ -16,19 +16,13 @@ set TOP_MODULE_FILE    ${RTL_SOURCE}/${TOP_LEVEL_MODULE}.sv
 ################################################################################
 # User-defined variables for logical library setup in dc_setup.tcl
 ################################################################################
-set ADDITIONAL_SEARCH_PATH    "/data2/projects/libraries/tsmc28hpcp/7t/dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db \
+set ADDITIONAL_SEARCH_PATH    "dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db \
                                $SCRIPT_DIR \
                                $INCLUDE_SOURCE";
 
 set TARGET_LIBRARY_FILES       dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db
 set SYMBOL_LIBRARY_FILES       sc.sdb
 set LIB                        dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_600MHz
-
-# set TECH_FILE     /data/projects/libraries/tech_file/tsmcn28_10lm5X2Y2RRDL.tf
-# set MW_REF_LIB    /data/projects/libraries/mw_lib/mw_lib_28hpm
-# set MW_DESIGN_LIB mw_${TOP_LEVEL_MODULE}
-# set TLUPLUS_MAX_FILE /data/projects/libraries/tech_file/RC_TLUplus_cln28hpm_1p10m+alrdl_5x2y2z_rcworst/cln28hpm_1p10m+alrdl_5x2y2z_rcworst.tluplus
-# set TLUPLUS_MIN_FILE /data/projects/libraries/tech_file/RC_TLUplus_cln28hpm_1p10m+alrdl_5x2y2z_rcbest/cln28hpm_1p10m+alrdl_5x2y2z_rcbest.tluplus
 
 ################################################################################
 # Clock Information
@@ -45,9 +39,6 @@ set LIB                        dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev
 set CLOCK_PERIOD_DTI          [expr {1000.0/760.0}]
 set MARGIN_DTI                [expr {$CLOCK_PERIOD_DTI*0.15}]
 
-#set CLOCK_PERIOD_PHY          1.5
-#set HALF_PERIOD_PHY           [expr {$CLOCK_PERIOD_PHY/2}]
-#set MARGIN_PHY                [expr {$CLOCK_PERIOD_PHY*0.20}]
 
 ################################################################################
 # Input constrain files
