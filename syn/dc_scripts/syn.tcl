@@ -22,7 +22,7 @@ set ADDITIONAL_SEARCH_PATH    "dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db \
 
 set TARGET_LIBRARY_FILES       dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db
 set SYMBOL_LIBRARY_FILES       sc.sdb
-set LIB                        dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_600MHz
+set LIB                        dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_760MHz
 
 ################################################################################
 # Clock Information
