@@ -22,19 +22,15 @@ set TOP_MODULE_FILE    ${RTL_SOURCE}/${TOP_LEVEL_MODULE}.sv
 ################################################################################
 # User-defined variables for logical library setup in dc_setup.tcl
 ################################################################################
-set ADDITIONAL_SEARCH_PATH    "/data2/projects/libraries/tsmc28hpcp/7t/dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db                                $SCRIPT_DIR                                $INCLUDE_SOURCE";
-/data2/projects/libraries/tsmc28hpcp/7t/dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db                                ./dc_scripts                                ../../lsi_imregion_max/inc
+set ADDITIONAL_SEARCH_PATH    "dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db                                $SCRIPT_DIR                                $INCLUDE_SOURCE";
+tsmc28hpcp/7t/dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db                                ./dc_scripts                                ../../lsi_imregion_max/inc
 set TARGET_LIBRARY_FILES       dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db
 dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db
 set SYMBOL_LIBRARY_FILES       sc.sdb
 sc.sdb
 set LIB                        dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_20MHz
 dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_20MHz
-# set TECH_FILE     /data/projects/libraries/tech_file/tsmcn28_10lm5X2Y2RRDL.tf
-# set MW_REF_LIB    /data/projects/libraries/mw_lib/mw_lib_28hpm
-# set MW_DESIGN_LIB mw_${TOP_LEVEL_MODULE}
-# set TLUPLUS_MAX_FILE /data/projects/libraries/tech_file/RC_TLUplus_cln28hpm_1p10m+alrdl_5x2y2z_rcworst/cln28hpm_1p10m+alrdl_5x2y2z_rcworst.tluplus
-# set TLUPLUS_MIN_FILE /data/projects/libraries/tech_file/RC_TLUplus_cln28hpm_1p10m+alrdl_5x2y2z_rcbest/cln28hpm_1p10m+alrdl_5x2y2z_rcbest.tluplus
+
 ################################################################################
 # Clock Information
 ################################################################################
@@ -115,7 +111,7 @@ file mkdir $RESULTS_DIR
 define_design_lib work -path ./work
 1
 set_app_var search_path       "$search_path $ADDITIONAL_SEARCH_PATH"
-. /tools/synopsys/dc/P-2019.03-SP3/libraries/syn /tools/synopsys/dc/P-2019.03-SP3/dw/syn_ver /tools/synopsys/dc/P-2019.03-SP3/dw/sim_ver /data2/projects/libraries/tsmc28hpcp/7t/dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db                                ./dc_scripts                                ../../lsi_imregion_max/inc
+. /tools/synopsys/dc/P-2019.03-SP3/libraries/syn /tools/synopsys/dc/P-2019.03-SP3/dw/syn_ver /tools/synopsys/dc/P-2019.03-SP3/dw/sim_ver dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db                                ./dc_scripts                                ../../lsi_imregion_max/inc
 set_app_var synthetic_library [list dw_foundation.sldb]
 dw_foundation.sldb
 set_app_var target_library    $TARGET_LIBRARY_FILES
@@ -190,7 +186,7 @@ Opening include file ../../lsi_imregion_max/inc/eda_global_define.svh
 Compiling source file ../../lsi_imregion_max/lib/sync_fifo/write_control.v
 Opening include file ../../lsi_imregion_max/inc/eda_global_define.svh
 Presto compilation completed successfully.
-Loading db file '/data2/projects/libraries/tsmc28hpcp/7t/dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db/dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db'
+Loading db file 'dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db/dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db'
 Loading db file '/tools/synopsys/dc/P-2019.03-SP3/libraries/syn/dw_foundation.sldb'
 1
 elaborate ${TOP_LEVEL_MODULE} -lib work
@@ -653,15 +649,15 @@ link
   Linking design 'eda_regional_max'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  eda_regional_max            /data5/workspace/thinv0/lsi_design/lsi_imregion_max/syn/eda_regional_max.db
+  eda_regional_max            workspace/thinv0/lsi_design/lsi_imregion_max/syn/eda_regional_max.db
   dti_stdcell_ssg_0p81v_neg40c (library)
-                              /data2/projects/libraries/tsmc28hpcp/7t/dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db/dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db
+                              dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db/dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db
   dw_foundation.sldb (library)
                               /tools/synopsys/dc/P-2019.03-SP3/libraries/syn/dw_foundation.sldb
 
 1
 write -format verilog -hierarchy -output ${RESULTS_DIR}/${TOP_LEVEL_MODULE}_${LIB}_GTECH.v
-Writing verilog file '/data5/workspace/thinv0/lsi_design/lsi_imregion_max/syn/results/eda_regional_max_dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_20MHz_GTECH.v'.
+Writing verilog file 'workspace/thinv0/lsi_design/lsi_imregion_max/syn/results/eda_regional_max_dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_20MHz_GTECH.v'.
 Warning: Verilog writer has added 212 nets to module eda_regional_max using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
 Warning: Module eda_regional_max contains unmapped components.  The output netlist might not be read back into the system. (VO-12)
 1
@@ -1043,7 +1039,7 @@ Information: The register 'eda_fifos/sync_fifo_up/sync_fifo_mem_inst/fifo_mem_re
     0:02:43    6890.7      0.00       0.0       0.0                            417.7420
     0:02:43    6890.7      0.00       0.0       0.0                            417.7420
     0:02:43    6890.7      0.00       0.0       0.0                            417.7420
-Loading db file '/data2/projects/libraries/tsmc28hpcp/7t/dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db/dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db'
+Loading db file 'dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db/dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db'
 
 
 Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
@@ -1173,7 +1169,7 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
     0:00:51    7005.2      0.00       0.0       0.0                            410.3124
     0:00:55    6946.0      0.00       0.0       0.0                            405.0430
     0:00:55    6946.0      0.00       0.0       0.0                            405.0430
-Loading db file '/data2/projects/libraries/tsmc28hpcp/7t/dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db/dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db'
+Loading db file 'dti_tm28hpcp_l30_stdcells_7t_rev1p0p1/db/dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1.db'
 
 
 Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
@@ -1199,11 +1195,11 @@ write -format ddc     -hierarchy -output ${RESULTS_DIR}/${DC_FINAL_DDC_OUTPUT_FI
 Writing ddc file 'results/eda_regional_max_dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_20MHz_netlist.ddc'.
 1
 write -format verilog -hierarchy -output ${RESULTS_DIR}/${DC_FINAL_VERILOG_OUTPUT_FILE}
-Writing verilog file '/data5/workspace/thinv0/lsi_design/lsi_imregion_max/syn/results/eda_regional_max_dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_20MHz_netlist.v'.
+Writing verilog file 'workspace/thinv0/lsi_design/lsi_imregion_max/syn/results/eda_regional_max_dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_20MHz_netlist.v'.
 1
 write_sdf -significant_digits 5          ${RESULTS_DIR}/${DC_FINAL_SDF_OUTPUT_FILE}
 Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
-Information: Writing timing information to file '/data5/workspace/thinv0/lsi_design/lsi_imregion_max/syn/results/eda_regional_max_dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_20MHz_netlist.sdf'. (WT-3)
+Information: Writing timing information to file 'workspace/thinv0/lsi_design/lsi_imregion_max/syn/results/eda_regional_max_dti_tm28hpcp_l30_stdcells_7t_ssg_0p81v_neg40c_rev0p0p1_20190228_32b_20MHz_netlist.sdf'. (WT-3)
 1
 ################################################################################
 # Generate Final Reports
