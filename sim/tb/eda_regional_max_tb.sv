@@ -69,7 +69,7 @@ module eda_regional_max_tb ();
     @(negedge clk);
     reset_n = 1;
 
-    for (int matrix_num = 0; matrix_num < 10002; matrix_num++) begin 
+    for (int matrix_num = 0; matrix_num < 1000000; matrix_num++) begin 
       $sformat(str, "%0d", matrix_num);
       // $display("%s",str);
       img_name = {"../tb/image_input_", str};      
