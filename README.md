@@ -30,9 +30,7 @@ Nguyen Duc Quang
 1. Go to directory **software** at the terminal
 2. Run the following command at the terminal
 
-```sh
-$ python3 test.py
-```
+    ```sh $ python3 test.py ```
 
 3. The results are located in **software/result**
 
@@ -41,19 +39,15 @@ $ python3 test.py
 2. Open gen_random_matrix.py, config the parameters: m - height of image, n - width of image, pixel_width, file_num - number of testcases
 3. Run the following commands at the terminal
 
-```sh
-$ python3 gen_random_matrix.py
-$ source ../script/qrun_bash
-$ vlb;vlg;vsm
-```
+    ```sh $ python3 gen_random_matrix.py ```
+    ```sh $ source ../script/qrun_bash ```
+    ```sh $ vlb;vlg;vsm ```
 
 or simulate on GUI of Questasim/Modelsim
 
 # How to view hardware simulation results by Questasim/Modelsim
 1. After simulating as above section, standing at directory **sim/tb** and run the following command at the terminal
 
-```sh
-$ vsim -view vsim.wlf -do wave.do
-```
+    ```sh $ vsim -view vsim.wlf -do wave.do ```
 
 2. File vsim.log at directory sim/tb is the result that used to be compared to model's result
