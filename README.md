@@ -56,3 +56,6 @@ $ vsim -view vsim.wlf -do wave.do
 ```
 
 2. File vsim.log at directory sim/tb is the result that used to be compared to model's result
+
+# **NOTE**
+We are accepted to use tools Questasim, Synopsys Design Compiler by Dolphin Technology Vietnam Center.
