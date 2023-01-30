@@ -22,7 +22,6 @@ Nguyen Duc Quang
 │    └───script     # Scripts for simulation
 └───syn             # Synthesis folder
     ├───report      # Report after synthesis
-    ├───result      # Result after synthesis
     └───dc_scripts  # Scripts for synthesis
 ```
 
