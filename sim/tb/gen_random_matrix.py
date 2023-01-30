@@ -5,7 +5,7 @@ n = 10
 pixel_width = 8
 window_width = 9
 
-file_num = 10000
+file_num = 1000000
 
 # ===============================================================
 #                      Gen parameter
