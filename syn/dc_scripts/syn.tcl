@@ -2,7 +2,7 @@
 # User-defined Project Path
 ################################################################################
 set TOP_LEVEL_MODULE  eda_regional_max
-set PROJECT_DIR       ../../lsi_imregion_max
+set PROJECT_DIR       ../../eda_regional_max
 set SCRIPT_DIR        ./dc_scripts
 
 ################################################################################
